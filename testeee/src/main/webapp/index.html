@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Vendas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 align="center"> Projeto de Vendas - CRUD </h1>
+    
+    <div id="loading" style="display: none;">
+    </div>
+    
+    <div id="conteudo">
+
+    <input type="button" value="novo" onclick="novo()" id="b"/>
+
+    <div id="formulario" style="display: none;">
+    
+    	<label>
+            Nome Produto: <input type="text" id="nome_produto"/>
+        </label> <br/>
+        
+         <label>
+            Preco: <input type="text" id="preco"/>
+        </label> <br/>
+
+        <label>
+            Quantidade: <input type="text" id="quantidade"/>
+        </label> <br/>
+
+        <label>
+            Nome Cliente: <input type="text" id="nome_cliente"/>
+        </label> <br/>
+
+        
+
+        <input type="button" value="salvar" onclick="salvar()"/>
+        <input type="button" value="cancelar" onclick="cancelar()"/>
+    </div>
+    
+    <div id="lista">
+        <table border="1" width="100%">
+            <thead> 
+                <th> Id </th>
+                <th> Nome Produto </th>
+                <th> Preco </th>
+                <th> Quantidade </th>       
+                <th> Nome Cliente </th>
+                <th></th>  
+                <th></th>  
+            </thead>
+            <tbody id="dados">
+
+            </tbody>
+        </table>
+    </div>
+  </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
+
